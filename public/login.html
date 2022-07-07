@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adminStyle.css">
+    <title>Admin</title>
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <p>ADMIN PAGE</p>
+        </div>
+    </header>
+
+    <div id="content">
+
+        <form action="javascript:iniciarSesion()">
+            <p class="title">AUTENTICACIÓN</p>
+            <div class="container">
+                <input id="username" type="text" placeholder="username"/>
+                <input id="password" type="password" id="password" placeholder="password"/>
+                <br>
+                <button>LOG IN</button>
+                <p class="error"></p>
+            </div>
+          </form>
+    </div>
+
+    <script src="./index.js"></script>
+    <script src="./js/helpers.js"></script>
+    <script>
+        hayToken();
+        
+        const iniciarSesion = async() => {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            
+            inicioSesion(username,password,document.getElementsByClassName("error")[0]);
+        }
+    </script>
+    
+</body>
+</html>

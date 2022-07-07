@@ -1,0 +1,55 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sketch de árboles</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
+    </head>
+
+    <header>
+        <div id="navbar">
+            <p>SKETCH DE ÁRBOLES</p>
+        </div>
+    </header>
+    
+    <body style="background-color: #8cd9b3;">
+        <p class="status" id="statusOK" style="display:none;">Status: <span style="color: green;">OK</span></p>
+        <p class="status" id="statusBAD" style="display:none;">Status: <span style="color: red;">NO HAY CONEXIÓN CON EL SERVIDOR</span></p>
+        <p class="status" id="statusNOIMAGE" style="display:none;">Status: <span style="color: orange;">SIN IMÁGENES</span></p>
+        <div id="infoContainer">Nombre: <span id="nombreT"></span> Especie: <span id="especieT"></span><img id="loading" src="icons/loadingGif.gif" style="margin-left: 5px;max-width: 20px; max-height: 20px;"></div>
+        <div class="container mx-auto">   
+            <div class="row mx-auto">
+                <div class="board" style="margin:auto;"> 
+                    <div id="img-wrapper">
+                        <img id="img-to-draw">
+                        <span id="op-selector" class="slider-wrapper" >
+                            <input type="range"  oninput="changeOpacity(this.value/100)" value="0" autocomplete="off" >
+                        </span>
+                        <div id="pizarra_container" style="position:relative;">
+                            <canvas id="background"></canvas>
+                            <canvas id="pizarra"></canvas>
+                        </div>
+                    </div>
+                                        
+                    <div id="buttonsContainer">
+                        <button type="button" class="btn btn-danger btn-sm" id="skipbtn">Saltar</button>
+                        <button type="button" class="btn btn-success btn-sm" id="clearbtn">Clear</button>
+                        <button type="button" class="btn btn-success btn-sm" id="borrarbtn">Borrar</button>
+                        <input type="range" id="op-selector2" oninput="changeOpacity(this.value/100)" value="0" autocomplete="off" >
+                        <button type="button" class="btn btn-success btn-sm" id="uploadsketch">Subir boceto</button>
+                    </div>
+                </div>
+                <img id="boceto">
+            </div>    
+        </div>    
+    
+    </body>
+
+
+
+    <!-- SCRIPTS PROPIOS -->
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adminStyle.css">
+    <title>Admin</title>
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <p>ADMIN PAGE<button id="logoutBTN">Logout</button></p>
+            
+        </div>
+    </header>
+    <div id="estadisticas">
+        <span id="totalArboles">Total de árboles: </span>
+        <span id="totalSketches">Total de bocetos realizados: </span>
+        <span id="totalEspecies">Número de especies: </span>
+    </div>
+    <div class="adminControllers">
+        <p class="title">SUBIDA DE IMÁGENES</p>
+        <div class="container">
+            <div>
+                <input id="image_uploads" class="uploadsButton" name="image_uploads" type="file" id="filepicker" name="fileList" webkitdirectory multiple />
+            </div>
+            <div class="preview">
+                <p>No hay ninguna imagen seleccionada.</p>
+            </div>
+            <div>
+                <button type="button" id="submit" class="uploadsButton">Subir</button>
+            </div>
+        </div>
+    </div>
+    <div class="adminControllers">
+        <p class="title">VISUALIZADOR DE IMÁGENES</p>
+        <div class="container">
+            <select id="selector">
+                <option selected disabled>Elige una especie</option>
+            </select>
+            <div class="preview" id="visualizadorPreview">
+                <select id="imagenes" size=8></select>
+                <img id="imgSeleccionada">
+            </div>
+            
+            <div class="preview" id="visualizadorSketches">
+                <p>No hay ninguna imagen seleccionada.</p>
+            </div>
+
+            <div id="borrarContainer">
+                <button type="button" id="borrarSketch" class="borrarButton">Borrar sketch</button>
+                <button type="button" id="borrarImg" class="borrarButton"">Borrar imagen</button>
+            </div>
+        </div>
+    </div>
+    <div id="datasetOptions">
+        <button id="datasetBTN">DESCARGAR DATASET</button>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./js/helpers.js"></script>
+    <script src="./js/admin.js"></script>
+    <script>
+        hayToken(false);
+    </script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    background-color: #8cd9b3;
+}
+
+#navbar {
+    margin: 0 auto;
+    background-color: green;
+    padding: 0.05px;
+}
+
+#navbar p {
+    color: white;
+    font-family: sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#navbar button {
+    float: right; 
+    margin-right: 4px; 
+    background-color: rgb(204, 204, 204);
+    cursor: pointer;
+}
+
+.inicioSesion {
+    background-color: whitesmoke;
+    border: 1px black;
+    border-radius: 4px;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+#content {
+    background: #4da84d;
+    max-width: 20%;
+    min-width: 300px;
+    margin: 10% auto;
+    padding: 0;
+    text-align: center; 
+    border-radius: 4px;
+}
+
+#content .container {
+    margin: 15px 45px;
+    padding-bottom: 5px;
+}
+
+.title {
+    background-color: green;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin: 0%;
+    padding: 10px 10px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+#content input {
+    width: 100%;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#content button {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    width: 40%;
+    border: 0;
+    border-radius:2px;
+    margin: 0px 0px 8px;
+    background-color: green;
+    padding: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.error {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-style: bold;
+}
+
+#estadisticas {
+    margin: 15px 20px;
+    border-radius: 6px;
+    background-color: green;
+    box-shadow: grey;
+}
+
+#estadisticas span {
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin: 0px 10px;
+}
+
+.adminControllers {
+    margin: 15px 20px;
+    background: #4da84d;
+    border-radius: 6px;
+    min-width: 300px;
+    padding: 0.05px;
+}
+
+.adminControllers .preview {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgb(204, 204, 204);
+    border: 1px rgba(0, 71, 0, 0.829);
+    border-radius: 6px;
+    font-family: sans-serif;
+    font-size: 14px;
+
+}
+
+.adminControllers .container {
+    margin: 15px 25px
+}
+
+.adminControllers .ul {
+    height: 50%;
+    max-height: 50%;
+}
+
+.adminControllers .uploadsButton {
+    font-family: sans-serif;
+    font-size: 14px;
+    border-radius:2px;
+    border: 0;
+    margin: 0px 0px 8px;
+    background-color: green;
+    padding: 7px 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.preview img {
+    width: 150px;
+    height: 150px;
+    margin: 0 5px;
+}
+
+
+#datasetOptions button {
+    margin:20px;
+    font-family: sans-serif;
+    font-size: 14px;
+    border: 0;
+    border-radius:2px;
+    background-color: green;
+    padding: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.adminControllers select {
+    max-width: 20%;
+    background-color: rgb(204, 204, 204);
+}
+
+.adminControllers #selector {
+    display: block;
+}
+
+.adminControllers #imagenes {
+    max-width: 200px;
+    display: inline;
+}
+
+#visualizadorPreview {
+    display: inline-block;
+}
+
+#visualizadorSketches img {
+    border: 1px solid rgba(0, 71, 0, 0.829);
+    cursor: pointer;
+}
+
+.selected {
+    border: 3px solid rgba(0, 71, 0, 0.829) !important;
+}
+
+.borrarButton {
+    font-family: sans-serif;
+    font-size: 14px;
+    border-radius:2px;
+    border: 0;
+    margin: 0px 0px 8px;
+    background-color: #dc3545;
+    padding: 7px 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#borrarContainer {
+    display:flex;
+    justify-content:space-between;
+    gap: 10px;
+}
