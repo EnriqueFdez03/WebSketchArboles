@@ -1,10 +1,10 @@
 # Web de Bocetos
 
-Desarrollada bajo NodeJS, la intención de esta web es la de permitir el desarrollo de un conjunto de datos supervisados de imágenes asociadas a bocetos. Para ello, en la web se muestra una imagen del servidor junto a una pizarra donde se ha de esbozar. 
+Desarrollada bajo NodeJS, la intención de esta web es la de permitir el desarrollo de un conjunto de datos supervisado de imágenes asociadas a bocetos. Para ello, en la web se muestra una imagen del servidor junto a una pizarra donde se ha de esbozar. 
 
 ## Puesta a punto
 
-Como prerrequisito necesitamos disponer de una base de datos Mongo, con una colección llamada *users* que contenga al menos un documento con *username* y *password*. Este será el usuario administrador.
+Como prerrequisito necesitamos disponer de una base de datos Mongo, con una colección llamada *users* que contenga al menos un documento con dos pares. Uno indicando el nombre de usuario bajo la clave *username* y el otro indicando la contraseña cifrada bajo la clave *password*. Este será el usuario administrador.
 
 Para poner en funcionamiento la web debemos renombrar el fichero *.example.env* a *.env*.  Posteriormente, lo modificaremos, indicando la cadena de conexión al servidor de Mongo con el usuario administrador y la clave privada con la que se cifró la contraseña.
 
@@ -48,5 +48,5 @@ npm start
 <img src="examples/login.png" width="25%"/> 
 </p>
 
-### Cuadro de inicio de sesión
+### Cuadro de administrador
 <img src="examples/admin.png"/>
